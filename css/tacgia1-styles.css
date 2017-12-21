@@ -348,7 +348,7 @@ body {
   content: '';
   height: 125px;
   width: 10px;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.15), transparent);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
   display: block;
   transform: rotate(125deg);
   position: absolute;
