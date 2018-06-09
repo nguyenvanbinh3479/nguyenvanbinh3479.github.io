@@ -1,0 +1,64 @@
+.content{
+    overflow: hidden;
+    padding-top: 100px;
+    margin: 0px 0 0px 100px;
+}
+.left-content{
+    float: left;
+}
+.right-content{
+    width: auto;
+    float: left;
+    margin-left: 70px;
+}
+.ig{
+    width: 200px;
+    height: 200px;
+}
+.ns{
+    overflow: hidden;
+    width: 33%;
+    float: left;
+}
+.bh{
+    margin-bottom: 42px;
+    overflow: hidden;
+}
+.imgbxh{
+    width: 150px;
+    height: 77px;
+}
+.hns{
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer p{
+    margin: 0;
+    color: white;
+}
+.choose{
+    background: silver;
+}
+.casi2{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    color: black !important;
+}
+.bot1{
+    
+    text-align: center;
+}
+.bh1{
+    padding: 0;
+}
+.cs{
+    padding: 0;
+}
+.footer{
+    background: black;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: white;
+}

@@ -1,0 +1,96 @@
+.content{
+    overflow: hidden;
+    padding-top: 100px;
+    margin: 0px 0 0px 100px;
+}
+.left-content{
+    float: left;
+}
+.right-content{
+    width: auto;
+    float: left;
+}
+.ig{
+    width: 200px;
+    height: 200px;
+}
+.ns{
+    overflow: hidden;
+    width: 33%;
+    float: left;
+}
+.bh{
+    margin-bottom: 42px;
+    overflow: hidden;
+}
+.imgbxh{
+    width: 150px;
+    height: 120px;
+}
+.hns{
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.baihat{
+    margin: 11px 0;
+    width: auto;
+}
+h5{
+    font-size: 16px;
+}
+.num{
+    margin: 0;
+    float: left;
+    font-size: 30px;
+    margin: 0 10px;
+}
+.num1{
+    margin: 0;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    margin: 0 10px;
+}
+.num2{
+    margin: 0;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+    margin: 0 10px;
+}
+.num3{
+    margin: 0;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    color: orange;
+    margin: 0 10px;
+}
+.bai1{
+    margin: 0;
+    color: black !important;
+    font-weight: 500;
+}
+.casi{
+    color: silver !important;
+    font-weight: 500;
+    margin: 0;
+}
+.ca2{
+    color: black !important;
+    font-weight: 500;
+    margin: 0;
+}
+.footer{
+    background: black;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: white;
+}
+.choose{
+    background: silver;
+}

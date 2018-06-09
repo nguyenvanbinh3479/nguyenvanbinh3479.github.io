@@ -1,0 +1,152 @@
+.content{
+    padding-top: 100px;
+}
+.top-content{
+    overflow: hidden;
+}
+ .left-content{
+    float: left;
+    margin: 0 70px;
+ }
+ .right-content{
+     float: left;
+     margin: 90px 0;
+ }
+ .baihat1{
+    overflow: hidden;
+ }
+
+ .casi{
+     font-size: 25px;
+ }
+ .mp3{
+    margin: 50px 0 0 0;
+ }
+.bot-content{
+    margin-left: 64px;  
+ }
+ .left{
+    font-size: 18px;
+    float: left;
+ }
+ .right{
+     float: left;
+     margin-left: 90px;
+ }
+ .baihat .left1{
+    float: left;
+}
+.baihat .left1 .left2{
+    border-top: 1px solid silver;
+    margin-right: 20px;
+    overflow: hidden;
+ }
+ .baihat .left1 .left2 h5 {
+    margin: 25px 0;
+    float: left;
+    font-size: 18px;
+}
+
+.baihat p{
+    float: right;
+    color: #737373;
+}
+.baihat .left1 .left2 p{
+    margin: 0 0px;
+}
+.baihat{
+    font-size: 20px;
+}
+.bxh {
+    padding: 0px 20px;
+    margin-top: 14px; 
+    float: left;
+    margin-left: 50px;
+    overflow: hidden;
+ }
+ .imgbxh{
+    float: left;
+    width: 185px;
+    height: 120px;
+    margin: 0px;
+ }
+ .bxh h5{
+     margin:10px 10px;
+ }
+ .left{
+    float: left;
+    margin: 25px 0;
+ }
+.right{
+     float: left;
+     margin-left: 85px;
+     margin-top: 25px;
+ }
+ 
+ .bh{
+    margin-top: 22px;
+    margin-bottom: 20px;
+    overflow: hidden;
+ }
+ .right1{
+    float: left;
+    margin: 0 30px;
+ }
+.tenbai{
+    font-size: 35px;
+    font-weight: bold;
+}
+h3{
+    font-size: 25px;
+}
+.img1{ 
+    width: 600px;
+    height: 338px;
+}
+.lyric{
+    text-align: center;
+}
+.loi{
+    border-bottom: 1px solid silver;
+    margin: 30px 0;
+    text-align: center;
+}
+.right1{
+    margin: 50px 30px;
+}
+.audio{
+    width: 535px;
+    height: 70px;
+    background: red; 
+    background: -webkit-linear-gradient(left, red , yellow);
+    background: -o-linear-gradient(right, red, yellow);
+    background: -moz-linear-gradient(right, red, yellow); 
+    background: linear-gradient(to right, red , yellow);
+}
+.bh3{
+    color: black !important;
+    font-weight: 500;
+    padding: 0;
+}
+.cs{
+    color: #737373 !important;
+    font-weight: 500;
+    padding: 0;
+}
+.cs3{
+    color: black !important;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0;
+}
+.casi{
+    font-size: 25px;
+    color: black !important;
+    font-weight: 500;
+}
+.baihat{
+    overflow: hidden;
+}
+.right{
+    margin-left: 95px;
+}
