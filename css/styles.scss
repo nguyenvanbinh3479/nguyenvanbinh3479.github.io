@@ -55,8 +55,7 @@ body{
       }
       .search{
         float: left;
-        margin: 12px 0px 12px 380px;
-        position: absolute;
+        margin: 12px 0px 12px 50px;
         input{
           border: 1px solid rgb(174, 174, 174);
           border-radius: 3px;
@@ -85,6 +84,59 @@ body{
         }
         a:hover{
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+        }
+      }
+    }
+  }
+  section{
+    .submenu{
+      border-bottom: 1px solid rgb(206, 206, 206);
+      ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li{
+          display: inline-block;
+          padding: 10px 15px 10px 0px;
+          a:link, a:visited{
+            width: 100px;
+            color: #000;
+            font-size: 20px;
+            padding: 11px 20px;
+            text-decoration: none;
+            &:hover{
+              border-bottom: 2px solid rgb(245, 57, 57);
+            }
+          }
+          .active{
+            border-bottom: 2px solid rgb(245, 57, 57);
+          }
+        }
+      }
+    }
+    .content{
+      overflow: hidden;
+      padding: 0px;
+      .content_left{
+        float: left;
+        padding: 0px;
+        .slider{
+          margin: 15px 0px;
+          padding: 0px !important;
+          h3{
+            text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+          }
+        }
+      }
+      .content_right{
+        float: left;
+        padding: 0px 0px 0px 50px;
+        .genres{
+          margin: 15px 0px;
+          img{
+            width: 324px; 
+            margin-bottom: 10px;
+          }
         }
       }
     }

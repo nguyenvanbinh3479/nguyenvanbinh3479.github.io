@@ -46,8 +46,7 @@ body {
           background-color: #fff; }
       body header .logo .search {
         float: left;
-        margin: 12px 0px 12px 380px;
-        position: absolute; }
+        margin: 12px 0px 12px 50px; }
         body header .logo .search input {
           border: 1px solid #aeaeae;
           border-radius: 3px;
@@ -71,5 +70,43 @@ body {
           margin-left: 10px; }
         body header .logo .follow a:hover {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  body section .submenu {
+    border-bottom: 1px solid #cecece; }
+    body section .submenu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+      body section .submenu ul li {
+        display: inline-block;
+        padding: 10px 15px 10px 0px; }
+        body section .submenu ul li a:link, body section .submenu ul li a:visited {
+          width: 100px;
+          color: #000;
+          font-size: 20px;
+          padding: 11px 20px;
+          text-decoration: none; }
+          body section .submenu ul li a:link:hover, body section .submenu ul li a:visited:hover {
+            border-bottom: 2px solid #f53939; }
+        body section .submenu ul li .active {
+          border-bottom: 2px solid #f53939; }
+  body section .content {
+    overflow: hidden;
+    padding: 0px; }
+    body section .content .content_left {
+      float: left;
+      padding: 0px; }
+      body section .content .content_left .slider {
+        margin: 15px 0px;
+        padding: 0px !important; }
+        body section .content .content_left .slider h3 {
+          text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+    body section .content .content_right {
+      float: left;
+      padding: 0px 0px 0px 50px; }
+      body section .content .content_right .genres {
+        margin: 15px 0px; }
+        body section .content .content_right .genres img {
+          width: 324px;
+          margin-bottom: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
