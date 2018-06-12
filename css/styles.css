@@ -28,7 +28,7 @@ body {
       overflow: hidden; }
       body header .logo h1 {
         float: left;
-        margin: 10px 15px 10px 0px; }
+        margin: 2px 15px 5px 0px; }
         body header .logo h1 img {
           width: 50px;
           height: 50px; }
@@ -37,12 +37,39 @@ body {
         float: left; }
         body header .logo .menu a:link, body header .logo .menu a:visited {
           color: #000;
-          padding: 20px 25px;
+          padding: 14px 25px;
           text-align: center;
           text-decoration: none;
           display: inline-block;
           font-size: 25px; }
         body header .logo .menu .active {
           background-color: #fff; }
+      body header .logo .search {
+        float: left;
+        margin: 12px 0px 12px 380px;
+        position: absolute; }
+        body header .logo .search input {
+          border: 1px solid #aeaeae;
+          border-radius: 3px;
+          padding: 7px 83px 7px 38px;
+          width: 400px; }
+        body header .logo .search img {
+          position: absolute;
+          margin: -31px 0px 0px 9px; }
+        body header .logo .search button {
+          position: absolute;
+          margin: -37px 0px 0px 319px;
+          padding: 5px 20px;
+          background: #e91f1f;
+          border: 0;
+          color: #fff; }
+      body header .logo .follow {
+        float: right;
+        margin: 16px 10px; }
+        body header .logo .follow a:link, body header .logo .follow a:visited {
+          float: left;
+          margin-left: 10px; }
+        body header .logo .follow a:hover {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 /*# sourceMappingURL=styles.css.map */
