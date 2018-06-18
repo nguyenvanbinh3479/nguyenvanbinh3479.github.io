@@ -1,0 +1,108 @@
+if (window.location.href.toString().indexOf("debugjavascript=true") == -1) {
+    console.log = function() {        
+    };
+    console.warn = function() {        
+    };
+}
+
+var lt = logTracking = function (data) {
+    //page, zone, action, type, key, relkey, user, extra
+    var url = ('https:' == document.location.protocol ? 'https://' : 'http://') + "log4x.nixcdn.com/w.gif";
+    var dataGet = {
+        page: data[0],
+        zone: data[1],
+        action: data[2],
+        type: data[3],
+        key: data[4],
+        relkey: data[5],
+        user: NCTInfo.userName,
+        extra: data[6],
+        time: (new Date()).getTime()
+    };
+    console.log(dataGet);
+    $.get(url, dataGet, function (result) {
+        console.log(result);
+    });
+};
+
+var navigationTracking = function () {
+    $("#menuTop").find("a").each(function () {
+        $(this).click(function (e) {
+            var hasClassActive = $(this).hasClass("active");
+            var _href = ($(this).attr("href")).replace("http://www.nhaccuatui.com/", "").replace(".html", "");
+            var data = ["navgation", "menutop", "click", "redriect", _href, hasClassActive, ""];
+            logTracking(data);
+        });
+    });
+};
+
+var listGenreTracking = function () {
+    if ($(".detail_menu_browsing_dashboard").size() > 0) {
+        $(".detail_menu_browsing_dashboard").find("a").each(function () {
+            $(this).click(function (e) {
+                var hasClassActive = $(this).hasClass("active");
+                var _href = ($(this).attr("href")).replace("http://www.nhaccuatui.com/", "").replace(".html", "");
+                var option = $(this).attr("pr");
+                var data = ["navgation", "genre", "click", "redriect", _href, hasClassActive, option];
+                logTracking(data);
+            });
+        });
+    }
+};
+
+var smartLogTracking = function () {
+    navigationTracking();
+    listGenreTracking();
+};
+
+var rl = rt = recommendTracking = function (data) {
+    var duration = Math.round(document.getElementById("mp3flashPlayer").duration);
+    var currentTime = Math.round(document.getElementById("mp3flashPlayer").currentTime);
+    var percent = Math.round(currentTime / duration * 100);
+    var extraInfo = percent;
+    var url = ('https:' == document.location.protocol ? 'https://' : 'http://') + "log4x.nixcdn.com/w.gif";
+    var _page = (window.location.href.indexOf("/playlist/") != -1) ? "nowplaying_playlist" : "nowplaying_song";
+    var dataGet = {
+        page: _page,
+        zone: "recommend_tracking",
+        action: "click",
+        type: "tracking_percent",
+        key: data[0],
+        relkey: data[1],
+        user: NCTInfo.userName,
+        extra: extraInfo,
+        dur: duration,
+        cur: currentTime,
+        time: (new Date()).getTime()
+    };
+    console.log(dataGet);
+    $.get(url, dataGet, function (result) {
+        console.log(result);
+    });
+};
+
+var rla = recommendTrackingAutoPlay = function (data, check) {
+    var duration = Math.round(document.getElementById("mp3flashPlayer").duration);
+    var currentTime = Math.round(document.getElementById("mp3flashPlayer").duration);
+    var percent = 100;
+    var extraInfo = percent;
+    var url = ('https:' == document.location.protocol ? 'https://' : 'http://') + "log4x.nixcdn.com/w.gif";
+    var _page = (window.location.href.indexOf("/playlist/") != -1) ? "nowplaying_playlist" : "nowplaying_song";
+    var dataGet = {
+        page: _page,
+        zone: "recommend_tracking",
+        action: "click",
+        type: "tracking_percent",
+        key: data[0],
+        relkey: data[1],
+        user: NCTInfo.userName,
+        extra: extraInfo,
+        dur: duration,
+        cur: currentTime,
+        time: (new Date()).getTime()
+    };
+    console.log(dataGet);
+    $.get(url, dataGet, function (result) {
+        console.log(result);
+    });
+};

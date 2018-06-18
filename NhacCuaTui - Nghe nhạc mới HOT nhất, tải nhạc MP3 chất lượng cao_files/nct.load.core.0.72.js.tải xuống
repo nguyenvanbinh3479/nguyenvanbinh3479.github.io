@@ -1,0 +1,138 @@
+function isLocalStorageNameSupported() {
+    try {
+        if (typeof window.localStorage != "undefined") {
+            var testKey = 'localtest', storage = window.localStorage;
+            try {
+                storage.setItem(testKey, 'true');
+                storage.removeItem(testKey);
+                return true;
+            } catch (error) {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    } catch (error) {
+        return false;
+    }
+}
+
+/*
+ * clear cache after 10 days
+ */
+if (isLocalStorageNameSupported()) {
+    if (localStorage.getItem("lastclear") === null) {
+        window.localStorage.clear();
+        localStorage.setItem("lastclear", (new Date()).getTime());
+    } else {
+        var lastclear = localStorage.getItem("lastclear");
+        if (lastclear + 60000 * 60 * 24 * 10 < (new Date()).getTime()) {
+            window.localStorage.clear();
+            localStorage.setItem("lastclear", (new Date()).getTime());
+        }
+    }
+}
+
+var openCache = true;
+if (typeof timeLoad != "undefined" && timeLoad == "0") {
+    openCache = false;
+}
+/*
+ * cache javascript
+ */
+var loadFile = function (type, key, fileName, replace) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            contentScriptLoad = this.responseText;
+            if (type == "css") {
+                //truong hop load css
+                contentScriptLoad = contentScriptLoad.split('url("../').join('url("' + NCTInfo.STATIC_URL + replace);
+                contentScriptLoad = contentScriptLoad.split('url(../').join('url(' + NCTInfo.STATIC_URL + replace);
+                contentScriptLoad = contentScriptLoad.split("url('../").join("url('" + NCTInfo.STATIC_URL + replace);
+                createStyleTagHtml(contentScriptLoad);
+            } else {
+                //truong hop load javascript
+                createJavascriptTagHtml(contentScriptLoad);
+            }
+
+            if (isLocalStorageNameSupported()) {
+                localStorage.setItem(type + "-" + key, contentScriptLoad);
+                localStorage.setItem(type + "-" + key + "-time", versionLoad);
+            }
+            delete contentScriptLoad;
+        }
+    };
+    xhttp.open("GET", fileName, false);
+    xhttp.send();
+};
+
+var createJavascriptTagHtml = function (content) {
+    var se = document.createElement('script');
+    se.setAttribute('type', 'text/javascript');
+    se.appendChild(document.createTextNode(content));
+    document.getElementsByTagName('head').item(0).appendChild(se);
+};
+var createStyleTagHtml = function (content) {
+    var styleNode = document.createElement('style');
+    styleNode.type = "text/css";
+    if (!!(window.attachEvent && !window.opera)) {
+        styleNode.styleSheet.cssText = content;
+    } else {
+        var styleText = document.createTextNode(content);
+        styleNode.appendChild(styleText);
+    }
+    document.getElementsByTagName('head')[0].appendChild(styleNode);
+};
+
+var nowVersionCoreLoadJS = "";
+var loadScript = function (type, arr, replace) {
+    //load file
+    for (i = 0; i < arr.length; i++) {
+        if (isLocalStorageNameSupported() && !isIE && openCache) {
+            if (localStorage.getItem(type + "-" + arr[i].k) === null
+                    || localStorage.getItem(type + "-" + arr[i].k + "-time") === null
+                    || localStorage.getItem(type + "-" + arr[i].k + "-time") != versionLoad
+                    ) {
+                //console.log("load file", localStorage.getItem(type + "-" + arr[i].k + "-time"), versionLoad);
+                loadFile(type, arr[i].k, NCTInfo.STATIC_URL + arr[i].v + "?v=" + versionLoad, replace);
+            } else {
+                //console.log(type + "-" + arr[i].k);
+                if (type == "css") {
+                    createStyleTagHtml(localStorage.getItem(type + "-" + arr[i].k));
+                } else {
+                    createJavascriptTagHtml(localStorage.getItem(type + "-" + arr[i].k));
+                }
+            }
+        } else {
+            loadFile(type, arr[i].k, NCTInfo.STATIC_URL + arr[i].v + "?v=" + versionLoad, replace);
+        }
+    }
+};
+
+var versionLoad = '0.71-' + timeLoad;
+var isIE = navigator.userAgent.toLowerCase().indexOf("msie") != -1 || navigator.userAgent.toLowerCase().indexOf(".net") != -1;
+
+
+var JS_PACK = "1.0.63";
+/*
+ * list file
+ */
+
+var cssFile = [
+    {k: "loading", v: "css/loading.css"},
+    {k: "fonts", v: "css/nct.fonts.v11.0.1.css"},
+    {k: "screen", v: "css/nct.screen.v11.0.79.css"},
+    {k: "responsive", v: "css/nct.responsive.v11.0.5.css"},
+    {k: "custom", v: "css/nct.custom.v11.0.20.css"},
+    {k: "search_new", v: "search_v3/css/search.1.0.1.css"}
+];
+var jsFile = [
+    {k: "core", v: "js/load/min/nct.core.min.v1.5.js"},
+    {k: "jspart5", v: "js/load/min/0_20180524.js"},
+    {k: "jspart1", v: "js/load/min/1_0116.js"},
+    {k: "jspart2", v: "js/load/min/2_180419.js"}
+];
+
+loadScript("css", cssFile, "");
+loadScript("js", jsFile, "");
