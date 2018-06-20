@@ -300,7 +300,7 @@ ul.notifi li ul li ul li a:hover{background:none; text-decoration:none; border-b
 
 
 
-.box-content .list_video{width:840px; float:left; margin-bottom:20px; margin-bottom: 0;}
+.box-content .list_video{width:840px; float:left; margin-top:20px;}
 .box-content .list_video .fram_select{width:840px; float:left; overflow:hidden}
 .box-content .list_video .fram_select ul{width:860px; float:left;}
 .box-content .list_video .fram_select ul li{width:195px; float:left; margin:0 20px 20px 0; padding:0px 0px; margin-bottom:0px; height:185px}
@@ -368,13 +368,12 @@ ul.list_item_music li .button_playing:hover{background:url(https://stc-id.nixcdn
 .tile_box_key{width:100%; float:left;}
 .tile_box_key .icon-mrtui-thich{background:url(https://stc-id.nixcdn.com/v11/images/mrtui-goiy.png) no-repeat; width:37px; height:49px; position:absolute; margin:-10px 5px 0 0}
 .tile_box_key .icon-mrtui-hero{background:url(https://stc-id.nixcdn.com/v11/images/mrtui-hero.png) no-repeat; width:37px; height:49px; position:absolute; margin:-10px 5px 0 0}
-.tile_box_key h1, .tile_box_key h2,.tile_box_key h3{float:left;display:block; width:auto; color:#212121; font-size:26px; text-transform:uppercase; font-weight:300; line-height:36px; margin:20px 0 10px 0; color:#23262d}
+.tile_box_key h1, .tile_box_key h2,.tile_box_key h3{float:left;display:block; width:auto; color:#212121; font-size:26px; text-transform:uppercase; font-weight:300; line-height:36px; margin:0px 0 10px 0; color:#23262d}
 .tile_box_key h1 a,.tile_box_key h2 a,.tile_box_key h3 a{color:#2582be;  background:url(https://stc-id.nixcdn.com/v11/images/icon-repeat.png) right -155px no-repeat; text-transform:uppercase; padding:0 20px 0 0; font-weight:300 !important}
 .tile_box_key h1 a.nomore,.tile_box_key h2 a.nomore,.tile_box_key h3 a.nomore{padding:0 5px 0 0; background:none}
 .tile_box_key h1 a.nomore.paddingl40,.tile_box_key h2 a.nomore.paddingl40,.tile_box_key h3 a.nomore.paddingl40{padding:0 0 0 40px; }
 .tile_box_key h1.wauto,.tile_box_key h2.wauto,.tile_box_key h3.wauto{width: auto !important;}
 .tile_box_key h1 a.fontsmall,.tile_box_key h2 a.fontsmall,.tile_box_key h3 a.fontsmall{ font-size:22px}
-.tile_box_key h2 a:hover{text-decoration: none}
 .btn_view_select{float:right; padding:0px 0px; width:auto; height:32px; background:#e5e5e5; line-height:32px; -webkit-border-radius:16px;-moz-border-radius:16px;border-radius:16px; overflow:hidden}
 .btn_view_select a{padding:0 15px 0 15px; font-size:14px; color:#333333; float: left}
 .btn_view_select a:hover{color:#fff; background:#e74c3c}
@@ -521,7 +520,7 @@ ul.list_item_music li .button_playing:hover{background:url(https://stc-id.nixcdn
 .list_music .fram_select{width:400px; float:left; overflow:hidden;}
 .list_music .fram_select ul{width:430px; float:left;}
 */
-.list_music{width:840px; float:left; margin:20px 0 20px 0;}
+.list_music{width:840px; float:left; margin:0px 0 20px 0;}
 .list_music .fram_select{width:840px; float:left; overflow:hidden;}
 .list_music .fram_select ul{width:870px; float:left;}
 .list_music .fram_select ul li{width:400px; float:left; margin-right:30px; border-top:#ececec solid 1px; padding:5px 0px; line-height:24px;}
@@ -2731,7 +2730,7 @@ ul.search_returns_list li.list_song.search .search_lyric{margin-bottom: 23px;wid
 .box_chart_mv .list_chart_video li.one .info_data { width: 300px; height: 168px; position: relative; background: #000; }
 .box_chart_mv .list_chart_video li.one .info_data a { width: 100%; height: 100%; }
 .box_chart_mv .list_chart_video li.one .icon_listen { float: left }
-.box_chart_mv .list_chart_video li.one .info_data .number.special-1 { width: 46px; height: 46px; font-size: 20px; border: #e74c3c solid 1px; margin: 120px 0 0 0; line-height: 46px; background: #e74c3c; color: #FFFFFF; position: absolute; z-index: 11; }
+.box_chart_mv .list_chart_video li.one .info_data .number.special-1 { width: 46px; height: 46px; font-size: 20px; border: #e74c3c solid 1px; margin: 122px 0 0 0; line-height: 46px; background: #e74c3c; color: #FFFFFF; position: absolute; z-index: 11; }
 .box_chart_mv .list_chart_video li.one .info_data .icon_play { position: absolute; z-index: 101; top: 50%; left: 50%; margin: -24px 0 0 -24px; width: 48px; height: 48px; display: block; background: url("https://stc-id.nixcdn.com/v11/images/icon.png") left -28px no-repeat; }
 .box_chart_mv .list_chart_video li.one .info_data img { width: 100%; height: 100%; }
 .box_chart_mv .list_chart_video li.one .info_data .name_video_large { position: absolute; width: 390px; bottom: 0; padding: 10px; font-size: 16px; z-index: 10; color: #a8a8a8; }
