@@ -17,7 +17,7 @@ button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}
 img{max-width:100%;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic}
 audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
 audio{
-    width: 797px;
+    width: 668px;
     margin: -58px 0px 50px 0px;
 }
 a,a:hover,a:active,a:focus{outline:0}
@@ -579,9 +579,9 @@ ul.list_item_music li .button_playing:hover{background:url(https://stc-id.nixcdn
 
 
 .box-content .box_playing{padding:0px 0;width:840px; float:left;}
-.box-content .box_playing .playing_absolute{position:absolute;width:840px; margin-top: 70px;}
+.box-content .box_playing .playing_absolute{width:840px; margin-top: 70px;}
 .box-content .box_playing .playing_video{padding:0px 0;width:1170px; position:absolute; background:#000;}
-.box-content .box_playing .info_name_songmv{float:left; padding-bottom:5px;height: 60px;}
+.box-content .box_playing .info_name_songmv{float:left; padding-bottom:5px;height: 60px;    margin: 0px 0px 15px 0px;}
 .box_playing .info_name_songmv .topbreadCrumb{float:left; padding:3px 0px; width:840px;color:#999999; }
 .box_playing .info_name_songmv .topbreadCrumb a{ color:#999999; font-size:13px;line-height:18px;}
 .box_playing .info_name_songmv .topbreadCrumb a:hover{color:#e74c3c}
@@ -3842,7 +3842,7 @@ ul.search_returns_list li.list_song.search .search_lyric{margin-bottom: 23px;wid
     /*end list_channel*/
     /*begin lyric*/
     .lyric{width:626px; }
-    .lyric .pd_name_lyric{ width:626px; }
+    .lyric .pd_name_lyric{ width:587px; }
     .lyric .pd_name_lyric .name_lyric{ width:626px; }
     .lyric .pd_name_lyric .name_post{width:626px;}
     .lyric .pd_lyric{width:626px;}
@@ -3974,7 +3974,7 @@ ul.search_returns_list li.list_song.search .search_lyric{margin-bottom: 23px;wid
     .box-content .box_playing .playing_video{width:998px; }
     .box_playing .info_name_songmv .topbreadCrumb{ width:668px; }
     .box_playing .info_name_songmv .name_title{ width:518px;}
-    .box-content .box_playing .playing_video .box-view-player{width:668px;}
+    .box-content .box_playing .playing_video .box-view-player{width:840px;}
     .box_menu_player,.box-content-player{ width:668px;}	
     .box_share_data,.box_share_data .row_share{width:648px; }
     .input_data.input_link1{width:303px;}
@@ -4518,7 +4518,7 @@ desgin responsive
 }
 
 @media screen and (max-width: 1190px){
-    .lyric .pd_lyric {width: 333px;padding-right: 305px;}
+    .lyric .pd_lyric {width: 604px;padding-right: 305px;}
     .box_menu_player ul li {margin-right: 10px;}
     .box_menu_player .box_btn_like {width: 327px; margin-top: 0px !important;}
     .box-content .list_topic_full ul li .box_info_show {margin: 40px 0px 0 320px}
@@ -6064,9 +6064,9 @@ body {-webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-tap-highlight-color
 
 
 .box-content .box_playing{padding:0px 0;width:840px; float:left;}
-.box-content .box_playing .playing_absolute{position:absolute;width:840px; margin-top: 70px;}
+.box-content .box_playing .playing_absolute{width:840px; margin-top: 70px;}
 .box-content .box_playing .playing_video{padding:0px 0;width:1170px; position:absolute; background:#000;}
-.box-content .box_playing .info_name_songmv{float:left; padding-bottom:5px; height: 60px;}
+.box-content .box_playing .info_name_songmv{float:left; padding-bottom:5px; height: 60px;    margin: 0px 0px 15px 0px;}
 .box_playing .info_name_songmv .topbreadCrumb{float:left; padding:3px 0px; width:840px;color:#999999; }
 .box_playing .info_name_songmv .topbreadCrumb a{ color:#999999; font-size:13px;line-height:18px;}
 .box_playing .info_name_songmv .topbreadCrumb a:hover{color:#e74c3c}
@@ -6104,16 +6104,16 @@ body {-webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-tap-highlight-color
 
 .box-content .box_playing .playing_video .box-list-playing .box-detail-item-playlist li:hover img,.box-content .box_playing .playing_video .box-list-playing .box-detail-item-playlist li.active img{ border:#e74c3c solid 2px; width:76px; height:41px;}
 
-.box-content .box_playing .playing_video{width:998px;}
+.box-content .box_playing .playing_video{width:840px;}
 .box-content .box_playing .playing_absolute{width:668px; margin-top: 65px;}
 
 
 
-.box-content .box_playing{width:798px;}
-    .box-content .box_playing .playing_video{width:998px; }
+.box-content .box_playing{width:668px;}
+    .box-content .box_playing .playing_video{width:840px; }
     .box_playing .info_name_songmv .topbreadCrumb{ width:668px; }
     .box_playing .info_name_songmv .name_title{ width:518px;}
-    .box-content .box_playing .playing_video .box-view-player{width:668px;}
+    .box-content .box_playing .playing_video .box-view-player{width:840px;}
     
     .box-content .box_playing .playing_video .box-list-playing .title-show-name h1 {white-space: nowrap;
         text-overflow: ellipsis;
