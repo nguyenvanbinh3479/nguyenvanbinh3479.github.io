@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="icon" type="image/png" href="images/icons/logo.png">
+        <link rel="stylesheet" href="css/styles.css">
+        <meta http-equiv="Content-Language" content="vi">
+        <meta http-equiv="X-UA-Compatible" content="requiresActiveX=true">     
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- <script src="js/disable-copy.js"></script> -->
+        <title>Alan-Walker</title>
+    </head>
+    <body>
+        <!--A Begin box header-->
+        <div class="box-header" id="header">
+            <div class="wrap">
+                <div class="content-wrap">
+                    <a class="logo" href="index.html"></a>
+                    <div class="menu-subdomain">
+                        <a href="index.html" class="active">MUSIC</a>
+                        <a href="videos.html" target="_blank">VIDEO</a>
+                    </div>
+                      <div id="box_search_quick" class="box_search">
+                        <div class="bg-top-noel"></div>
+                        <form id="formSearchQuick" method="GET" action="tim-kiem" onsubmit="return NCTQuickSearch.buttonSearchProcess();">
+                            <input id="txtSearch" maxlength="45" name="q" type="text" class="i-search" value="" rel="Tìm bài hát, video, playlist, ca sĩ" autocomplete="off">                    
+                            <input id="btnSearch" type="submit" class="b-search" value="SEARCH">
+                            <div class="list-keyword" id="divHotKeyword">                            
+                            </div>
+                        </form>
+                        <div id="divSuggestion" class="hideShowCase suggestion" m="0">                        
+                            <div style="float:left; width:346px; max-height: 450px;">
+                                <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 0px;"><div id="idScrllSuggestion" style="overflow: hidden; width: auto; height: 0px;">
+                                    <ul id="contentSuggestion" class="content_search" style="text-transform:capitalize;"></ul>
+                                </div><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="follow">
+						<a href="https://www.youtube.com/channel/UCf0SS3m2zdRtfaAgnr5kIBw/?sub_confirmation=1">
+							<img src="images/icons/youtube.png" alt="">
+						</a>
+						<a href="http://123link.pw/WV3BLpxl">
+							<img src="images/icons/facebook.png" alt="">
+						</a>
+						<a href="http://123link.pw/EKl2z">
+							<img src="images/icons/google.png" alt="">
+						</a>
+						<a href="http://123link.pw/qaXD0FW">
+							<img src="images/icons/blogger.png" alt="">
+						</a>
+					</div>
+                </div>
+            </div>
+        </div>
+        <!--End box header-->
+
+        <!--A Begin sub-menu-header-->
+        <div id="submenu" class="sub-menu-header">
+            <div class="wrap">
+                <div class="content-wrap">
+                    <!--A Begin sub-menu-top-->   
+                    <div class="menu-top">
+                        <ul class="notifi" id="menuTop">
+                            <li class="icon_logo_menu" id="icon_menu_logo">
+                                <a href="index.html" title="Home" class="active">Home</a>
+                            </li>
+                            
+                            <li>                                
+                                <a href="songs.html" title="Songs">Songs</a>
+                            </li>
+                            
+                            <li>
+                                <a rel="follow" href="genres.html" title="Genres">Genres</a>
+                            </li>
+                            
+                            <li>
+                                <a rel="follow" href="singers.html" title="Singer">Singers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--End sub-menu-top-->
+
+                </div>
+            </div>
+        </div>
+        <!--End sub-menu-header-->
+
+        <div class="singer-top-cover">
+                <div class="bg-singer-cover" style="background:url(https://avatar-nct.nixcdn.com/singer/cover/2016/04/07/5/e/9/d/1460012429491.jpg)"></div>
+                <div class="wrap">
+                    <div class="content-wrap">
+                        <div class="singer-left-avatar">
+                            <div class="singer-avatar">
+                                <img src="./Alan Walker_ Nghe tải album Alan Walker_files/1478506344028.jpg">
+                            </div>
+                            <h1 class="singer-name" style="text-overflow:ellipsis;overflow: hidden;white-space:nowrap">Alan Walker</h1>
+                            <p>Tên thật: Alan Olav Walker</p>
+                            <p>Sinh nhật: 24/08/1997</p>
+                            <p>Giới tính: Nam</p>
+                            <p>Quốc gia: Norway</p>
+                        </div>
+                        <div class="singer-right-cover"><img src="images/1460012429491.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        <!--A Begin box content-->
+        <div class="box-content">
+                <div class="wrap">
+                    <div class="content-wrap">
+                        <div class="box-left">  
+                            
+                            <div class="singer_profile" style="margin-bottom: 0px; overflow: hidden; height: auto;">
+                                <div class="fram_select">
+                                    <div class="tile_box_key">
+                                        <h2><a title="Tiểu sử">Tiểu sử</a></h2>
+                                    </div><!--@end div tile_box_key-->
+                                    <div class="singer_profile_content">
+                                        <div style="line-height: 1.5" id="divDescription" class="">
+                                            <p>Walker sinh ngày 24/08/1997 tại Vương quốc Anh, có bố là người Anh và mẹ là người Na Uy. Khi anh 2 tuổi, anh chuyển đến sống tại Bergen, Na Uy. Walker đã ký một hợp đồng với Sony Music Entertainment Thụy Điển vào năm 2015. Đĩa đơn đầu tiên của anh - "Faded" là phiên bản có lời của "Fade" do bản thân anh tự sản xuất. "Faded" đã đứng vị trí đầu tiên trong bảng xếp hạng ở Na Uy và Thụy Điển và có mặt trong top 10 tại Đan Mạch và Phần Lan.</p>
+            <p>Đĩa đơn "Sing Me To Sleep" được phát hành vào ngày 3 tháng 6 năm 2016, với sự hợp tác của cùng giọng ca trong "Faded", Iselin Solheim. Bài hát đứng đầu bảng xếp hạng iTunes ở 7 quốc gia, có được 17 triệu lượt stream trên Spotify, và 100 triệu lượt xem trên YouTube.</p>
+            <p>Single "Alone"&nbsp;được phát hành ngày 2 tháng 12, được thể hiện giọng hát bởi nghệ sĩ thu âm người Thụy Điển&nbsp;Noonie Bao.</p>
+                                        </div>
+            <!--                            <div style="line-height: 1.5" id="shortDescription">
+                                            
+                                        </div>-->
+            <!--                            <a style="color:#0689ba; margin-top: 10px;" href="javascript:;" id="seeMoreDescription" title="Xem toàn bộ" class="btn_view_more hide">Xem toàn bộ<span class="down"></span></a>
+                                        <a style="color:#0689ba; margin-top: 10px;" href="javascript:;" id="hideMoreDescription" title="Thu gọn" class="btn_view_hide hide">Thu gọn<span class="up"></span></a>-->
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list_album" style="font-size: 14px; background: #fff; margin-bottom: 0px; padding-bottom: 10px;">
+                                <span id="dotedDetail"></span>
+                                <a style="color:#0689ba; margin-top: 10px;" href="javascript:;" id="seeMoreDescription" title="Xem toàn bộ" class="btn_view_more hide">Xem toàn bộ<span class="down"></span></a>
+                                <a style="color:#0689ba; margin-top: 10px;" href="javascript:;" id="hideMoreDescription" title="Thu gọn" class="btn_view_hide">Thu gọn<span class="up"></span></a>
+                            </div>
+                            <script type="text/javascript">
+                                var html = $.trim($("#divDescription").html());
+                                $("div[id*='hiddenLyricHtml']").remove();
+                                $('<div id="hiddenLyricHtml" class="pd_lyric" style="display:none;width:618px;">' + html + '</div>').appendTo('body');
+                                if ($("#divDescription").height() > 65) {
+                                    $(".singer_profile").css({"height":"110px"});
+                                    $("#seeMoreDescription").removeClass("hide");
+                                    $("#hideMoreDescription").addClass("hide");
+                                } else {
+                                    $("#seeMoreDescription").addClass("hide");
+                                    $("#hideMoreDescription").addClass("hide");
+                                    $("#dotedDetail").html("");
+                                }
+                                $("#seeMoreDescription").unbind().click(function () {
+                                     $(".singer_profile").css({"height":"auto"});
+                                     $("#seeMoreDescription").addClass("hide");
+                                     $("#hideMoreDescription").removeClass("hide");
+                                     $("#dotedDetail").html("");
+                                });
+                                $("#hideMoreDescription").unbind().click(function () {
+                                    $(".singer_profile").css({"height":"110px"});
+                                    $("#seeMoreDescription").removeClass("hide");
+                                    $("#hideMoreDescription").addClass("hide");
+                                    $("#dotedDetail").html("(...)");
+                                });
+                            </script>
+                            
+                            
+                            
+                            <div class="list_video" style="background: #fff">
+                                <div class="fram_select">
+                                    
+                                    <div class="tile_box_key">
+                                        <h2><a title="Music Video" href="https://www.nhaccuatui.com/nghe-si-alan-walker.mv.html" onclick="lt([&#39;artist-detail&#39;,&#39;list-video&#39;,&#39;click&#39;,&#39;menu&#39;,&#39;video&#39;,&#39;&#39;,&#39;all&#39;]);">MV Alan Walker</a></h2>                  
+                                    </div>
+                                    
+                                    
+                                    <ul>
+                                        
+                                        <li>
+                                            <div class="box_absolute">                    		
+                                                <a href="https://www.nhaccuatui.com/video/ignite-lyric-video-k-391-ft-alan-walker-ft-julie-bergan-ft-seung-ri-bigbang.aJ6yTtTtBbb1l.html" class="img" onclick="lt([&#39;artist-detail&#39;,&#39;list-video&#39;,&#39;click&#39;,&#39;video&#39;,&#39;aJ6yTtTtBbb1l&#39;,&#39;&#39;,&#39;thumb&#39;]);">
+                                                    <span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_5520458" wgct="1">248</span></span>
+                                                    <span class="icon_play"></span>
+                                                    <img src="./Alan Walker_ Nghe tải album Alan Walker_files/1530287515030_268.jpg" data-src="https://avatar-nct.nixcdn.com/mv/2018/06/29/8/2/7/e/1530287515030_268.jpg" onerror="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/video-default.jpg&#39;, &#39;fail&#39;);" onload="common.handleErrorImage(this,&#39;https://stc-id.nixcdn.com/v11/images/video-default.jpg&#39;, &#39;&#39;);">
+                                                </a>
+                                                <span class="icon_time_video">03:32</span>
+                                            </div>
+                                            <h3><a href="https://www.nhaccuatui.com/video/ignite-lyric-video-k-391-ft-alan-walker-ft-julie-bergan-ft-seung-ri-bigbang.aJ6yTtTtBbb1l.html" class="name_song" onclick="lt([&#39;artist-detail&#39;,&#39;list-video&#39;,&#39;click&#39;,&#39;video&#39;,&#39;aJ6yTtTtBbb1l&#39;,&#39;&#39;,&#39;title&#39;]);">Ignite (Lyric Video)</a></h3>
+                                            <p><a href="https://www.nhaccuatui.com/tim-kiem?q=K-391&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ K-391 trình bày" target="_blank">K-391</a>, <a href="https://www.nhaccuatui.com/nghe-si-alan-walker.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Alan Walker trình bày" target="_blank">Alan Walker</a>, <a href="https://www.nhaccuatui.com/tim-kiem?q=Julie+Bergan&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Julie Bergan trình bày" target="_blank">Julie Bergan</a>, <a href="https://www.nhaccuatui.com/nghe-si-seung-ri-bigbang.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Seung Ri (BIGBANG) trình bày" target="_blank">Seung Ri (BIGBANG)</a></p>
+                                        </li>
+                                        
+                                        <li>
+                                            <div class="box_absolute">                    		
+                                                <a href="https://www.nhaccuatui.com/video/ignite-live-performance-at-vg-lista-2018-k-391-ft-alan-walker-ft-julie-bergan-ft-vinni.9fPpTMMzaoDa6.html" class="img" onclick="lt([&#39;artist-detail&#39;,&#39;list-video&#39;,&#39;click&#39;,&#39;video&#39;,&#39;9fPpTMMzaoDa6&#39;,&#39;&#39;,&#39;thumb&#39;]);">
+                                                    <span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_5511376" wgct="1">2.828</span></span>
+                                                    <span class="icon_play"></span>
+                                                    <img src="./Alan Walker_ Nghe tải album Alan Walker_files/1529978269272_268.jpg" data-src="https://avatar-nct.nixcdn.com/mv/2018/06/26/a/3/c/1/1529978269272_268.jpg" onerror="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/video-default.jpg&#39;, &#39;fail&#39;);" onload="common.handleErrorImage(this,&#39;https://stc-id.nixcdn.com/v11/images/video-default.jpg&#39;, &#39;&#39;);">
+                                                </a>
+                                                <span class="icon_time_video">03:28</span>
+                                            </div>
+                                            <h3><a href="https://www.nhaccuatui.com/video/ignite-live-performance-at-vg-lista-2018-k-391-ft-alan-walker-ft-julie-bergan-ft-vinni.9fPpTMMzaoDa6.html" class="name_song" onclick="lt([&#39;artist-detail&#39;,&#39;list-video&#39;,&#39;click&#39;,&#39;video&#39;,&#39;9fPpTMMzaoDa6&#39;,&#39;&#39;,&#39;title&#39;]);">Ignite (Live Performance At VG-Lista 2018)</a></h3>
+                                            <p><a href="https://www.nhaccuatui.com/tim-kiem?q=K-391&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ K-391 trình bày" target="_blank">K-391</a>, <a href="https://www.nhaccuatui.com/nghe-si-alan-walker.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Alan Walker trình bày" target="_blank">Alan Walker</a>, <a href="https://www.nhaccuatui.com/tim-kiem?q=Julie+Bergan&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Julie Bergan trình bày" target="_blank">Julie Bergan</a>, <a href="https://www.nhaccuatui.com/tim-kiem?q=Vinni&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Vinni trình bày" target="_blank">Vinni</a></p>
+                                        </li>
+                                        
+                                        <li>
+                                            <div class="box_absolute">                    		
+                                                <a href="https://www.nhaccuatui.com/video/sing-me-to-sleep-alan-walker.6TssfkBPAAHyG.html" class="img" onclick="lt([&#39;artist-detail&#39;,&#39;list-video&#39;,&#39;click&#39;,&#39;video&#39;,&#39;6TssfkBPAAHyG&#39;,&#39;&#39;,&#39;thumb&#39;]);">
+                                                    <span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4471896" wgct="1">320.861</span></span>
+                                                    <span class="icon_play"></span>
+                                                    <img src="./Alan Walker_ Nghe tải album Alan Walker_files/1464927555680_268.jpg" data-src="https://avatar-nct.nixcdn.com/mv/2016/06/03/6/2/c/e/1464927555680_268.jpg" onerror="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/video-default.jpg&#39;, &#39;fail&#39;);" onload="common.handleErrorImage(this,&#39;https://stc-id.nixcdn.com/v11/images/video-default.jpg&#39;, &#39;&#39;);">
+                                                </a>
+                                                <span class="icon_time_video">03:11</span>
+                                            </div>
+                                            <h3><a href="https://www.nhaccuatui.com/video/sing-me-to-sleep-alan-walker.6TssfkBPAAHyG.html" class="name_song" onclick="lt([&#39;artist-detail&#39;,&#39;list-video&#39;,&#39;click&#39;,&#39;video&#39;,&#39;6TssfkBPAAHyG&#39;,&#39;&#39;,&#39;title&#39;]);">Sing Me To Sleep</a></h3>
+                                            <p><a href="https://www.nhaccuatui.com/nghe-si-alan-walker.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Alan Walker trình bày" target="_blank">Alan Walker</a></p>
+                                        </li>
+                                        
+                                        <li>
+                                            <div class="box_absolute">                    		
+                                                <a href="https://www.nhaccuatui.com/video/quy-lay-voi-thanh-sub-ban-hit-faded-alan-walker.mPIChphyVJRzu.html" class="img" onclick="lt([&#39;artist-detail&#39;,&#39;list-video&#39;,&#39;click&#39;,&#39;video&#39;,&#39;mPIChphyVJRzu&#39;,&#39;&#39;,&#39;thumb&#39;]);">
+                                                    <span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4398347" wgct="1">187.141</span></span>
+                                                    <span class="icon_play"></span>
+                                                    <img src="./Alan Walker_ Nghe tải album Alan Walker_files/1460214756352_268.jpg" data-src="https://avatar-nct.nixcdn.com/mv/2016/04/09/e/5/1/b/1460214756352_268.jpg" onerror="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/video-default.jpg&#39;, &#39;fail&#39;);" onload="common.handleErrorImage(this,&#39;https://stc-id.nixcdn.com/v11/images/video-default.jpg&#39;, &#39;&#39;);">
+                                                </a>
+                                                <span class="icon_time_video">03:28</span>
+                                            </div>
+                                            <h3><a href="https://www.nhaccuatui.com/video/quy-lay-voi-thanh-sub-ban-hit-faded-alan-walker.mPIChphyVJRzu.html" class="name_song" onclick="lt([&#39;artist-detail&#39;,&#39;list-video&#39;,&#39;click&#39;,&#39;video&#39;,&#39;mPIChphyVJRzu&#39;,&#39;&#39;,&#39;title&#39;]);">Quỳ Lạy Với Thánh Sub Bản Hit "Faded"</a></h3>
+                                            <p><a href="https://www.nhaccuatui.com/nghe-si-alan-walker.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Alan Walker trình bày" target="_blank">Alan Walker</a></p>
+                                        </li>
+                                        
+                                        <li>
+                                            <div class="box_absolute">                    		
+                                                <a href="https://www.nhaccuatui.com/video/faded-vietsub-kara-alan-walker.pVa4B2gOInPo9.html" class="img" onclick="lt([&#39;artist-detail&#39;,&#39;list-video&#39;,&#39;click&#39;,&#39;video&#39;,&#39;pVa4B2gOInPo9&#39;,&#39;&#39;,&#39;thumb&#39;]);">
+                                                    <span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4373183" wgct="1">146.704</span></span>
+                                                    <span class="icon_play"></span>
+                                                    <img src="./Alan Walker_ Nghe tải album Alan Walker_files/1458035248120_268.jpg" data-src="https://avatar-nct.nixcdn.com/mv/2016/03/15/4/2/f/4/1458035248120_268.jpg" onerror="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/video-default.jpg&#39;, &#39;fail&#39;);" onload="common.handleErrorImage(this,&#39;https://stc-id.nixcdn.com/v11/images/video-default.jpg&#39;, &#39;&#39;);">
+                                                </a>
+                                                <span class="icon_time_video">03:32</span>
+                                            </div>
+                                            <h3><a href="https://www.nhaccuatui.com/video/faded-vietsub-kara-alan-walker.pVa4B2gOInPo9.html" class="name_song" onclick="lt([&#39;artist-detail&#39;,&#39;list-video&#39;,&#39;click&#39;,&#39;video&#39;,&#39;pVa4B2gOInPo9&#39;,&#39;&#39;,&#39;title&#39;]);">Faded (Vietsub, Kara)</a></h3>
+                                            <p><a href="https://www.nhaccuatui.com/nghe-si-alan-walker.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Alan Walker trình bày" target="_blank">Alan Walker</a></p>
+                                        </li>
+                                        
+                                        <li>
+                                            <div class="box_absolute">                    		
+                                                <a href="https://www.nhaccuatui.com/video/faded-wind-music-awards-2016-alan-walker.AuQ7uQqXUbRoN.html" class="img" onclick="lt([&#39;artist-detail&#39;,&#39;list-video&#39;,&#39;click&#39;,&#39;video&#39;,&#39;AuQ7uQqXUbRoN&#39;,&#39;&#39;,&#39;thumb&#39;]);">
+                                                    <span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4497451" wgct="1">57.549</span></span>
+                                                    <span class="icon_play"></span>
+                                                    <img src="./Alan Walker_ Nghe tải album Alan Walker_files/1467111672154_268.jpg" data-src="https://avatar-nct.nixcdn.com/mv/2016/06/28/d/5/c/0/1467111672154_268.jpg" onerror="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/video-default.jpg&#39;, &#39;fail&#39;);" onload="common.handleErrorImage(this,&#39;https://stc-id.nixcdn.com/v11/images/video-default.jpg&#39;, &#39;&#39;);">
+                                                </a>
+                                                <span class="icon_time_video">03:28</span>
+                                            </div>
+                                            <h3><a href="https://www.nhaccuatui.com/video/faded-wind-music-awards-2016-alan-walker.AuQ7uQqXUbRoN.html" class="name_song" onclick="lt([&#39;artist-detail&#39;,&#39;list-video&#39;,&#39;click&#39;,&#39;video&#39;,&#39;AuQ7uQqXUbRoN&#39;,&#39;&#39;,&#39;title&#39;]);">Faded (Wind Music Awards 2016)</a></h3>
+                                            <p><a href="https://www.nhaccuatui.com/nghe-si-alan-walker.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Alan Walker trình bày" target="_blank">Alan Walker</a></p>
+                                        </li>
+                                        
+                                        <li>
+                                            <div class="box_absolute">                    		
+                                                <a href="https://www.nhaccuatui.com/video/alone-ravolution-music-festival-2016-alan-walker.54HW1ReplujmJ.html" class="img" onclick="lt([&#39;artist-detail&#39;,&#39;list-video&#39;,&#39;click&#39;,&#39;video&#39;,&#39;54HW1ReplujmJ&#39;,&#39;&#39;,&#39;thumb&#39;]);">
+                                                    <span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4697479" wgct="1">11.985</span></span>
+                                                    <span class="icon_play"></span>
+                                                    <img src="./Alan Walker_ Nghe tải album Alan Walker_files/1481260924444_268.jpg" data-src="https://avatar-nct.nixcdn.com/mv/2016/12/09/6/d/a/d/1481260924444_268.jpg" onerror="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/video-default.jpg&#39;, &#39;fail&#39;);" onload="common.handleErrorImage(this,&#39;https://stc-id.nixcdn.com/v11/images/video-default.jpg&#39;, &#39;&#39;);">
+                                                </a>
+                                                <span class="icon_time_video">03:12</span>
+                                            </div>
+                                            <h3><a href="https://www.nhaccuatui.com/video/alone-ravolution-music-festival-2016-alan-walker.54HW1ReplujmJ.html" class="name_song" onclick="lt([&#39;artist-detail&#39;,&#39;list-video&#39;,&#39;click&#39;,&#39;video&#39;,&#39;54HW1ReplujmJ&#39;,&#39;&#39;,&#39;title&#39;]);">Alone (Ravolution Music Festival 2016)</a></h3>
+                                            <p><a href="https://www.nhaccuatui.com/nghe-si-alan-walker.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Alan Walker trình bày" target="_blank">Alan Walker</a></p>
+                                        </li>
+                                        
+                                        <li>
+                                            <div class="box_absolute">                    		
+                                                <a href="https://www.nhaccuatui.com/video/faded-ravolution-music-festival-2016-alan-walker.O3CcVeydqAUWd.html" class="img" onclick="lt([&#39;artist-detail&#39;,&#39;list-video&#39;,&#39;click&#39;,&#39;video&#39;,&#39;O3CcVeydqAUWd&#39;,&#39;&#39;,&#39;thumb&#39;]);">
+                                                    <span class="view_mv"><span class="icon_view"></span><span id="NCTCounter_sg_4697473" wgct="1">27.252</span></span>
+                                                    <span class="icon_play"></span>
+                                                    <img src="./Alan Walker_ Nghe tải album Alan Walker_files/1481260879076_268.jpg" data-src="https://avatar-nct.nixcdn.com/mv/2016/12/09/6/d/a/d/1481260879076_268.jpg" onerror="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/video-default.jpg&#39;, &#39;fail&#39;);" onload="common.handleErrorImage(this,&#39;https://stc-id.nixcdn.com/v11/images/video-default.jpg&#39;, &#39;&#39;);">
+                                                </a>
+                                                <span class="icon_time_video">04:23</span>
+                                            </div>
+                                            <h3><a href="https://www.nhaccuatui.com/video/faded-ravolution-music-festival-2016-alan-walker.O3CcVeydqAUWd.html" class="name_song" onclick="lt([&#39;artist-detail&#39;,&#39;list-video&#39;,&#39;click&#39;,&#39;video&#39;,&#39;O3CcVeydqAUWd&#39;,&#39;&#39;,&#39;title&#39;]);">Faded (Ravolution Music Festival 2016)</a></h3>
+                                            <p><a href="https://www.nhaccuatui.com/nghe-si-alan-walker.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Alan Walker trình bày" target="_blank">Alan Walker</a></p>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="list_music_full" style="background: #fff"> 
+                                
+                                <div class="tile_box_key">
+                                    <h2><a title="Bài Hát" href="https://www.nhaccuatui.com/nghe-si-alan-walker.bai-hat.html" class="nomore" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;menu&#39;,&#39;song&#39;,&#39;&#39;,&#39;all&#39;]);">Bài hát Alan Walker</a><!--1h2-->
+                                </h2></div> 
+                                
+                                
+                                <ul class="list_item_music">
+                                    
+                                    <li>
+                                        <div class="item_content"><h3 style="display: inline;"><a href="https://www.nhaccuatui.com/bai-hat/ignite-raiden-remix-k-391-ft-alan-walker-ft-julie-bergan-ft-seung-ri-bigbang.KQnwWw2ICtHB.html" class="name_song" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;KQnwWw2ICtHB&#39;,&#39;&#39;,&#39;title&#39;]);">Ignite (Raiden Remix)</a></h3> - <span style="color: #9a9a9a;"><a href="https://www.nhaccuatui.com/tim-kiem?q=K-391&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ K-391 trình bày" target="_blank">K-391</a>, <a href="https://www.nhaccuatui.com/nghe-si-alan-walker.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Alan Walker trình bày" target="_blank">Alan Walker</a>, <a href="https://www.nhaccuatui.com/tim-kiem?q=Julie+Bergan&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Julie Bergan trình bày" target="_blank">Julie Bergan</a>, <a href="https://www.nhaccuatui.com/nghe-si-seung-ri-bigbang.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Seung Ri (BIGBANG) trình bày" target="_blank">Seung Ri (BIGBANG)</a></span></div>
+                                        <div class="list_mark">
+                                            
+                                            
+                                            <span class="icon-tag-hd" title="High Quality (Chất Lượng Cao)">HQ</span>
+                                        </div>
+                                        
+                                        <span class="icon_listen" id="NCTCounter_sg_5522188" wgct="1">1.334</span>
+                                        <a href="https://www.nhaccuatui.com/bai-hat/ignite-raiden-remix-k-391-ft-alan-walker-ft-julie-bergan-ft-seung-ri-bigbang.KQnwWw2ICtHB.html" target="_blank" class="button_new_window" title="Nghe bài hát Ignite (Raiden Remix) - K-391, Alan Walker, Julie Bergan, Seung Ri (BIGBANG) ở cửa sổ mới" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;KQnwWw2ICtHB&#39;,&#39;&#39;,&#39;button&#39;]);"></a>
+                                        <div class="fright_button_add_playlist"><a href="javascript:;" id="btnShowBoxPlaylist_KQnwWw2ICtHB" onclick="return NCTAddPlaylist.showBox(&#39;KQnwWw2ICtHB&#39;);" class="button_add_playlist" title="Thêm bài hát Ignite (Raiden Remix) - K-391, Alan Walker, Julie Bergan, Seung Ri (BIGBANG) vào playlist yêu thích"></a> </div>
+                                        <a href="https://www.nhaccuatui.com/bai-hat/ignite-raiden-remix-k-391-ft-alan-walker-ft-julie-bergan-ft-seung-ri-bigbang.KQnwWw2ICtHB.html" class="button_playing" title="Nghe bài hát Ignite (Raiden Remix) - K-391, Alan Walker, Julie Bergan, Seung Ri (BIGBANG) này" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;KQnwWw2ICtHB&#39;,&#39;&#39;,&#39;new-tab&#39;]);"></a>                
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="item_content"><h3 style="display: inline;"><a href="https://www.nhaccuatui.com/bai-hat/ignite-pantaq-remix-k-391-ft-alan-walker-ft-julie-bergan-ft-seung-ri-bigbang.sv3qY1sFy7ya.html" class="name_song" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;sv3qY1sFy7ya&#39;,&#39;&#39;,&#39;title&#39;]);">Ignite (Panta.Q Remix)</a></h3> - <span style="color: #9a9a9a;"><a href="https://www.nhaccuatui.com/tim-kiem?q=K-391&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ K-391 trình bày" target="_blank">K-391</a>, <a href="https://www.nhaccuatui.com/nghe-si-alan-walker.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Alan Walker trình bày" target="_blank">Alan Walker</a>, <a href="https://www.nhaccuatui.com/tim-kiem?q=Julie+Bergan&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Julie Bergan trình bày" target="_blank">Julie Bergan</a>, <a href="https://www.nhaccuatui.com/nghe-si-seung-ri-bigbang.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Seung Ri (BIGBANG) trình bày" target="_blank">Seung Ri (BIGBANG)</a></span></div>
+                                        <div class="list_mark">
+                                            
+                                            
+                                            <span class="icon-tag-hd" title="High Quality (Chất Lượng Cao)">HQ</span>
+                                        </div>
+                                        
+                                        <span class="icon_listen" id="NCTCounter_sg_5522187" wgct="1">40</span>
+                                        <a href="https://www.nhaccuatui.com/bai-hat/ignite-pantaq-remix-k-391-ft-alan-walker-ft-julie-bergan-ft-seung-ri-bigbang.sv3qY1sFy7ya.html" target="_blank" class="button_new_window" title="Nghe bài hát Ignite (Panta.Q Remix) - K-391, Alan Walker, Julie Bergan, Seung Ri (BIGBANG) ở cửa sổ mới" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;sv3qY1sFy7ya&#39;,&#39;&#39;,&#39;button&#39;]);"></a>
+                                        <div class="fright_button_add_playlist"><a href="javascript:;" id="btnShowBoxPlaylist_sv3qY1sFy7ya" onclick="return NCTAddPlaylist.showBox(&#39;sv3qY1sFy7ya&#39;);" class="button_add_playlist" title="Thêm bài hát Ignite (Panta.Q Remix) - K-391, Alan Walker, Julie Bergan, Seung Ri (BIGBANG) vào playlist yêu thích"></a> </div>
+                                        <a href="https://www.nhaccuatui.com/bai-hat/ignite-pantaq-remix-k-391-ft-alan-walker-ft-julie-bergan-ft-seung-ri-bigbang.sv3qY1sFy7ya.html" class="button_playing" title="Nghe bài hát Ignite (Panta.Q Remix) - K-391, Alan Walker, Julie Bergan, Seung Ri (BIGBANG) này" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;sv3qY1sFy7ya&#39;,&#39;&#39;,&#39;new-tab&#39;]);"></a>                
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="item_content"><h3 style="display: inline;"><a href="https://www.nhaccuatui.com/bai-hat/faded-alan-walker.ep1L5xbe9lLG.html" class="name_song" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;ep1L5xbe9lLG&#39;,&#39;&#39;,&#39;title&#39;]);">Faded</a></h3> - <span style="color: #9a9a9a;"><a href="https://www.nhaccuatui.com/nghe-si-alan-walker.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Alan Walker trình bày" target="_blank">Alan Walker</a></span></div>
+                                        <div class="list_mark">
+                                            <span class="icon-tag-official" title="Bản Chính Thức">Official</span>
+                                            <span class="icon-tag-lossless" title="Super Quality (Lossless)">SQ</span>
+                                            
+                                        </div>
+                                        
+                                        <span class="icon_listen" id="NCTCounter_sg_4253629" wgct="1">14.562.785</span>
+                                        <a href="https://www.nhaccuatui.com/bai-hat/faded-alan-walker.ep1L5xbe9lLG.html" target="_blank" class="button_new_window" title="Nghe bài hát Faded - Alan Walker ở cửa sổ mới" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;ep1L5xbe9lLG&#39;,&#39;&#39;,&#39;button&#39;]);"></a>
+                                        <div class="fright_button_add_playlist"><a href="javascript:;" id="btnShowBoxPlaylist_ep1L5xbe9lLG" onclick="return NCTAddPlaylist.showBox(&#39;ep1L5xbe9lLG&#39;);" class="button_add_playlist" title="Thêm bài hát Faded - Alan Walker vào playlist yêu thích"></a> </div>
+                                        <a href="https://www.nhaccuatui.com/bai-hat/faded-alan-walker.ep1L5xbe9lLG.html" class="button_playing" title="Nghe bài hát Faded - Alan Walker này" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;ep1L5xbe9lLG&#39;,&#39;&#39;,&#39;new-tab&#39;]);"></a>                
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="item_content"><h3 style="display: inline;"><a href="https://www.nhaccuatui.com/bai-hat/sing-me-to-sleep-alan-walker.c4usqvkXtEmI.html" class="name_song" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;c4usqvkXtEmI&#39;,&#39;&#39;,&#39;title&#39;]);">Sing Me To Sleep</a></h3> - <span style="color: #9a9a9a;"><a href="https://www.nhaccuatui.com/nghe-si-alan-walker.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Alan Walker trình bày" target="_blank">Alan Walker</a></span></div>
+                                        <div class="list_mark">
+                                            <span class="icon-tag-official" title="Bản Chính Thức">Official</span>
+                                            <span class="icon-tag-lossless" title="Super Quality (Lossless)">SQ</span>
+                                            
+                                        </div>
+                                        
+                                        <span class="icon_listen" id="NCTCounter_sg_4471641" wgct="1">12.107.410</span>
+                                        <a href="https://www.nhaccuatui.com/bai-hat/sing-me-to-sleep-alan-walker.c4usqvkXtEmI.html" target="_blank" class="button_new_window" title="Nghe bài hát Sing Me To Sleep - Alan Walker ở cửa sổ mới" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;c4usqvkXtEmI&#39;,&#39;&#39;,&#39;button&#39;]);"></a>
+                                        <div class="fright_button_add_playlist"><a href="javascript:;" id="btnShowBoxPlaylist_c4usqvkXtEmI" onclick="return NCTAddPlaylist.showBox(&#39;c4usqvkXtEmI&#39;);" class="button_add_playlist" title="Thêm bài hát Sing Me To Sleep - Alan Walker vào playlist yêu thích"></a> </div>
+                                        <a href="https://www.nhaccuatui.com/bai-hat/sing-me-to-sleep-alan-walker.c4usqvkXtEmI.html" class="button_playing" title="Nghe bài hát Sing Me To Sleep - Alan Walker này" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;c4usqvkXtEmI&#39;,&#39;&#39;,&#39;new-tab&#39;]);"></a>                
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="item_content"><h3 style="display: inline;"><a href="https://www.nhaccuatui.com/bai-hat/alone-alan-walker.dPAWTe6nAnZ8.html" class="name_song" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;dPAWTe6nAnZ8&#39;,&#39;&#39;,&#39;title&#39;]);">Alone</a></h3> - <span style="color: #9a9a9a;"><a href="https://www.nhaccuatui.com/nghe-si-alan-walker.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Alan Walker trình bày" target="_blank">Alan Walker</a></span></div>
+                                        <div class="list_mark">
+                                            <span class="icon-tag-official" title="Bản Chính Thức">Official</span>
+                                            <span class="icon-tag-lossless" title="Super Quality (Lossless)">SQ</span>
+                                            
+                                        </div>
+                                        
+                                        <span class="icon_listen" id="NCTCounter_sg_4692173" wgct="1">10.104.149</span>
+                                        <a href="https://www.nhaccuatui.com/bai-hat/alone-alan-walker.dPAWTe6nAnZ8.html" target="_blank" class="button_new_window" title="Nghe bài hát Alone - Alan Walker ở cửa sổ mới" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;dPAWTe6nAnZ8&#39;,&#39;&#39;,&#39;button&#39;]);"></a>
+                                        <div class="fright_button_add_playlist"><a href="javascript:;" id="btnShowBoxPlaylist_dPAWTe6nAnZ8" onclick="return NCTAddPlaylist.showBox(&#39;dPAWTe6nAnZ8&#39;);" class="button_add_playlist" title="Thêm bài hát Alone - Alan Walker vào playlist yêu thích"></a> </div>
+                                        <a href="https://www.nhaccuatui.com/bai-hat/alone-alan-walker.dPAWTe6nAnZ8.html" class="button_playing" title="Nghe bài hát Alone - Alan Walker này" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;dPAWTe6nAnZ8&#39;,&#39;&#39;,&#39;new-tab&#39;]);"></a>                
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="item_content"><h3 style="display: inline;"><a href="https://www.nhaccuatui.com/bai-hat/spectre-alan-walker.fY0Eadu66soW.html" class="name_song" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;fY0Eadu66soW&#39;,&#39;&#39;,&#39;title&#39;]);">Spectre</a></h3> - <span style="color: #9a9a9a;"><a href="https://www.nhaccuatui.com/nghe-si-alan-walker.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Alan Walker trình bày" target="_blank">Alan Walker</a></span></div>
+                                        <div class="list_mark">
+                                            
+                                            <span class="icon-tag-lossless" title="Super Quality (Lossless)">SQ</span>
+                                            
+                                        </div>
+                                        
+                                        <span class="icon_listen" id="NCTCounter_sg_3739081" wgct="1">5.693.850</span>
+                                        <a href="https://www.nhaccuatui.com/bai-hat/spectre-alan-walker.fY0Eadu66soW.html" target="_blank" class="button_new_window" title="Nghe bài hát Spectre - Alan Walker ở cửa sổ mới" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;fY0Eadu66soW&#39;,&#39;&#39;,&#39;button&#39;]);"></a>
+                                        <div class="fright_button_add_playlist"><a href="javascript:;" id="btnShowBoxPlaylist_fY0Eadu66soW" onclick="return NCTAddPlaylist.showBox(&#39;fY0Eadu66soW&#39;);" class="button_add_playlist" title="Thêm bài hát Spectre - Alan Walker vào playlist yêu thích"></a> </div>
+                                        <a href="https://www.nhaccuatui.com/bai-hat/spectre-alan-walker.fY0Eadu66soW.html" class="button_playing" title="Nghe bài hát Spectre - Alan Walker này" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;fY0Eadu66soW&#39;,&#39;&#39;,&#39;new-tab&#39;]);"></a>                
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="item_content"><h3 style="display: inline;"><a href="https://www.nhaccuatui.com/bai-hat/the-spectre-alan-walker.am558dwdemh1.html" class="name_song" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;am558dwdemh1&#39;,&#39;&#39;,&#39;title&#39;]);">The Spectre</a></h3> - <span style="color: #9a9a9a;"><a href="https://www.nhaccuatui.com/nghe-si-alan-walker.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Alan Walker trình bày" target="_blank">Alan Walker</a></span></div>
+                                        <div class="list_mark">
+                                            <span class="icon-tag-official" title="Bản Chính Thức">Official</span>
+                                            <span class="icon-tag-lossless" title="Super Quality (Lossless)">SQ</span>
+                                            
+                                        </div>
+                                        
+                                        <span class="icon_listen" id="NCTCounter_sg_5168081" wgct="1">6.243.713</span>
+                                        <a href="https://www.nhaccuatui.com/bai-hat/the-spectre-alan-walker.am558dwdemh1.html" target="_blank" class="button_new_window" title="Nghe bài hát The Spectre - Alan Walker ở cửa sổ mới" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;am558dwdemh1&#39;,&#39;&#39;,&#39;button&#39;]);"></a>
+                                        <div class="fright_button_add_playlist"><a href="javascript:;" id="btnShowBoxPlaylist_am558dwdemh1" onclick="return NCTAddPlaylist.showBox(&#39;am558dwdemh1&#39;);" class="button_add_playlist" title="Thêm bài hát The Spectre - Alan Walker vào playlist yêu thích"></a> </div>
+                                        <a href="https://www.nhaccuatui.com/bai-hat/the-spectre-alan-walker.am558dwdemh1.html" class="button_playing" title="Nghe bài hát The Spectre - Alan Walker này" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;am558dwdemh1&#39;,&#39;&#39;,&#39;new-tab&#39;]);"></a>                
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="item_content"><h3 style="display: inline;"><a href="https://www.nhaccuatui.com/bai-hat/faded-restrung-alan-walker.yIrMUVo0VirP.html" class="name_song" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;yIrMUVo0VirP&#39;,&#39;&#39;,&#39;title&#39;]);">Faded (Restrung)</a></h3> - <span style="color: #9a9a9a;"><a href="https://www.nhaccuatui.com/nghe-si-alan-walker.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Alan Walker trình bày" target="_blank">Alan Walker</a></span></div>
+                                        <div class="list_mark">
+                                            
+                                            <span class="icon-tag-lossless" title="Super Quality (Lossless)">SQ</span>
+                                            
+                                        </div>
+                                        
+                                        <span class="icon_listen" id="NCTCounter_sg_4335050" wgct="1">1.991.621</span>
+                                        <a href="https://www.nhaccuatui.com/bai-hat/faded-restrung-alan-walker.yIrMUVo0VirP.html" target="_blank" class="button_new_window" title="Nghe bài hát Faded (Restrung) - Alan Walker ở cửa sổ mới" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;yIrMUVo0VirP&#39;,&#39;&#39;,&#39;button&#39;]);"></a>
+                                        <div class="fright_button_add_playlist"><a href="javascript:;" id="btnShowBoxPlaylist_yIrMUVo0VirP" onclick="return NCTAddPlaylist.showBox(&#39;yIrMUVo0VirP&#39;);" class="button_add_playlist" title="Thêm bài hát Faded (Restrung) - Alan Walker vào playlist yêu thích"></a> </div>
+                                        <a href="https://www.nhaccuatui.com/bai-hat/faded-restrung-alan-walker.yIrMUVo0VirP.html" class="button_playing" title="Nghe bài hát Faded (Restrung) - Alan Walker này" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;yIrMUVo0VirP&#39;,&#39;&#39;,&#39;new-tab&#39;]);"></a>                
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="item_content"><h3 style="display: inline;"><a href="https://www.nhaccuatui.com/bai-hat/fade-dj-prom3t3u-remix-alan-walker.ixSvJ1DKHbLQ.html" class="name_song" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;ixSvJ1DKHbLQ&#39;,&#39;&#39;,&#39;title&#39;]);">Fade (DJ Prom3t3u Remix)</a></h3> - <span style="color: #9a9a9a;"><a href="https://www.nhaccuatui.com/nghe-si-alan-walker.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Alan Walker trình bày" target="_blank">Alan Walker</a></span></div>
+                                        <div class="list_mark">
+                                            
+                                            
+                                            <span class="icon-tag-hd" title="High Quality (Chất Lượng Cao)">HQ</span>
+                                        </div>
+                                        
+                                        <span class="icon_listen" id="NCTCounter_sg_3802585" wgct="1">1.030.473</span>
+                                        <a href="https://www.nhaccuatui.com/bai-hat/fade-dj-prom3t3u-remix-alan-walker.ixSvJ1DKHbLQ.html" target="_blank" class="button_new_window" title="Nghe bài hát Fade (DJ Prom3t3u Remix) - Alan Walker ở cửa sổ mới" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;ixSvJ1DKHbLQ&#39;,&#39;&#39;,&#39;button&#39;]);"></a>
+                                        <div class="fright_button_add_playlist"><a href="javascript:;" id="btnShowBoxPlaylist_ixSvJ1DKHbLQ" onclick="return NCTAddPlaylist.showBox(&#39;ixSvJ1DKHbLQ&#39;);" class="button_add_playlist" title="Thêm bài hát Fade (DJ Prom3t3u Remix) - Alan Walker vào playlist yêu thích"></a> </div>
+                                        <a href="https://www.nhaccuatui.com/bai-hat/fade-dj-prom3t3u-remix-alan-walker.ixSvJ1DKHbLQ.html" class="button_playing" title="Nghe bài hát Fade (DJ Prom3t3u Remix) - Alan Walker này" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;ixSvJ1DKHbLQ&#39;,&#39;&#39;,&#39;new-tab&#39;]);"></a>                
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="item_content"><h3 style="display: inline;"><a href="https://www.nhaccuatui.com/bai-hat/spectre-dubstep-remix-alan-walker.3OqUQKguhPOq.html" class="name_song" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;3OqUQKguhPOq&#39;,&#39;&#39;,&#39;title&#39;]);">Spectre (Dubstep Remix)</a></h3> - <span style="color: #9a9a9a;"><a href="https://www.nhaccuatui.com/nghe-si-alan-walker.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Alan Walker trình bày" target="_blank">Alan Walker</a></span></div>
+                                        <div class="list_mark">
+                                            
+                                            
+                                            <span class="icon-tag-hd" title="High Quality (Chất Lượng Cao)">HQ</span>
+                                        </div>
+                                        
+                                        <span class="icon_listen" id="NCTCounter_sg_3752838" wgct="1">465.579</span>
+                                        <a href="https://www.nhaccuatui.com/bai-hat/spectre-dubstep-remix-alan-walker.3OqUQKguhPOq.html" target="_blank" class="button_new_window" title="Nghe bài hát Spectre (Dubstep Remix) - Alan Walker ở cửa sổ mới" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;3OqUQKguhPOq&#39;,&#39;&#39;,&#39;button&#39;]);"></a>
+                                        <div class="fright_button_add_playlist"><a href="javascript:;" id="btnShowBoxPlaylist_3OqUQKguhPOq" onclick="return NCTAddPlaylist.showBox(&#39;3OqUQKguhPOq&#39;);" class="button_add_playlist" title="Thêm bài hát Spectre (Dubstep Remix) - Alan Walker vào playlist yêu thích"></a> </div>
+                                        <a href="https://www.nhaccuatui.com/bai-hat/spectre-dubstep-remix-alan-walker.3OqUQKguhPOq.html" class="button_playing" title="Nghe bài hát Spectre (Dubstep Remix) - Alan Walker này" onclick="lt([&#39;artist-detail&#39;,&#39;list-song&#39;,&#39;click&#39;,&#39;song&#39;,&#39;3OqUQKguhPOq&#39;,&#39;&#39;,&#39;new-tab&#39;]);"></a>                
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            
+                            
+                            <div class="clr"></div>
+                            
+                            
+                        </div>
+                        <div class="box-right">
+                            
+                            <div class="singer_playlist_new">
+                                <div class="tile_box_key">
+                                    <h3><a title="Playlist mới" class="nomore">Playlist mới</a></h3>  
+                                </div>
+                                
+                                <audio id="adPlayer" onended="NCTNowPlayingProfile.EndOfAudio()" ontimeupdate="NCTNowPlayingProfile.SeekBar()"></audio> 
+                                <div class="box_name_album_info">
+                                       <div class="info_album">
+                                        <div class="avatar_album">
+                                            <div class="rotate_album"><img src="./Alan Walker_ Nghe tải album Alan Walker_files/1525961127083.jpg" class="rotate" width="164"></div>
+                                            <span class="view_listen"><span class="icon_listen"></span><span id="NCTCounter_pl_55165564" wgct="1">11.552</span></span>
+                                            <a href="javascript:;" id="mainAlbum" class="box_font_album box_absolute">
+                                                <span class="icon_play_single_playlist"></span>
+                                            </a>
+                                            <div class="box_bg_album">
+                                                <a href="https://www.nhaccuatui.com/playlist/ignite-single-k-391-ft-alan-walker-ft-julie-bergan-ft-seung-ri-bigbang.UwdJE8xFSHtj.html" class="img_avatar"><img src="./Alan Walker_ Nghe tải album Alan Walker_files/1525961127083.jpg" class="img_album" width="180"></a>
+                                            </div>                	   
+                                        </div>  
+                                        <h3 style="font-size: 16px; margin-top: 10px; margin-bottom: 20px;"><a href="https://www.nhaccuatui.com/playlist/ignite-single-k-391-ft-alan-walker-ft-julie-bergan-ft-seung-ri-bigbang.UwdJE8xFSHtj.html">Ignite (Single)</a></h3>                  	                               
+                                    </div> 
+                                </div>
+                                <div id="loadingBar" class="hide">
+                                    <div class="bg_line_status_loading">
+                                        <span class="line_status_loading_show" style="width:100%"></span>
+                                        <span class="line_status_loading_listen" id="seekBar"></span>
+                                    </div>
+                                </div>
+                                <div class="list_chart_music" style="border-top: 1px solid #f3f3f3; padding-top: 10px;">
+                                    <ul id="ulSingle">
+                                        
+                                        <li id="itemSong_f99684aececfb519ee6b19e678b478ae">
+            <!--                                <div class="bg_line_status_loading"><span class="line_status_loading_show" style="width:80%"></span><span class="line_status_loading_listen" style="width:50%"></span></div>-->
+                                            <div class="info_data"><a title="Ignite - K-391, Alan Walker, Julie Bergan, Seung Ri (BIGBANG)" href="javascript:;" onclick="NCTNowPlayingProfile.playSound(&#39;f99684aececfb519ee6b19e678b478ae&#39;);return false;" class="name_song">Ignite</a>
+                                                <p class="list_name_singer"><a href="https://www.nhaccuatui.com/tim-kiem?q=K-391&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ K-391 trình bày" target="_blank">K-391</a>, <a href="https://www.nhaccuatui.com/nghe-si-alan-walker.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Alan Walker trình bày" target="_blank">Alan Walker</a>, <a href="https://www.nhaccuatui.com/tim-kiem?q=Julie+Bergan&amp;b=singer" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Julie Bergan trình bày" target="_blank">Julie Bergan</a>, <a href="https://www.nhaccuatui.com/nghe-si-seung-ri-bigbang.html" class="name_singer" title="Tìm các bài hát, playlist, mv do ca sĩ Seung Ri (BIGBANG) trình bày" target="_blank">Seung Ri (BIGBANG)</a></p>
+                                            </div>
+                                            
+                                            <span id="NCTCounter_sg_5471683" class="icon_listen" wgct="1">1.136.190</span>
+                                            <div class="bg_line_status_loading" style="margin-top: 10px;">
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                            
+            
+                            <div class="list_singer_hot">
+                                <div class="tile_box_key">
+                                    <h3><a title="Ca Sĩ | Nghệ Sĩ" href="https://www.nhaccuatui.com/nghe-si.html" onclick="lt([&#39;artist-detail&#39;,&#39;list-artist&#39;,&#39;click&#39;,&#39;menu&#39;,&#39;artist&#39;,&#39;&#39;,&#39;&#39;]);">Ca Sĩ | Nghệ Sĩ</a></h3>                  
+                                </div><!--@end div tile_box_key-->
+                                <ul>
+                                    <li><a href="https://www.nhaccuatui.com/nghe-si-the-chainsmokers.html" onclick="lt([&#39;artist-detail&#39;,&#39;list-artist&#39;,&#39;click&#39;,&#39;artist&#39;,&#39;the chainsmokers&#39;,&#39;&#39;,&#39;right-block&#39;]);" class="img" title="The Chainsmokers"><img src="./Alan Walker_ Nghe tải album Alan Walker_files/1504863911243.jpg" data-src="https://avatar-nct.nixcdn.com/singer/avatar/2017/09/08/5/5/c/0/1504863911243.jpg" onerror="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/avatar_default.jpg&#39;, &#39;fail&#39;);" onload="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/avatar_default&#39;, &#39;&#39;);" title="The Chainsmokers" alt="the chainsmokers"></a><a href="https://www.nhaccuatui.com/nghe-si-the-chainsmokers.html" class="name_singer_main" title="The Chainsmokers">The Chainsmokers</a></li><li><a href="https://www.nhaccuatui.com/nghe-si-galantis.html" onclick="lt([&#39;artist-detail&#39;,&#39;list-artist&#39;,&#39;click&#39;,&#39;artist&#39;,&#39;galantis&#39;,&#39;&#39;,&#39;right-block&#39;]);" class="img" title="Galantis"><img src="./Alan Walker_ Nghe tải album Alan Walker_files/1482394716658.jpg" data-src="https://avatar-nct.nixcdn.com/singer/avatar/2016/12/22/5/a/d/7/1482394716658.jpg" onerror="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/avatar_default.jpg&#39;, &#39;fail&#39;);" onload="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/avatar_default&#39;, &#39;&#39;);" title="Galantis" alt="galantis"></a><a href="https://www.nhaccuatui.com/nghe-si-galantis.html" class="name_singer_main" title="Galantis">Galantis</a></li><li><a href="https://www.nhaccuatui.com/tim-kiem?q=Kaskade&amp;b=singer" onclick="lt([&#39;artist-detail&#39;,&#39;list-artist&#39;,&#39;click&#39;,&#39;artist&#39;,&#39;kaskade&#39;,&#39;&#39;,&#39;right-block&#39;]);" class="img" title="Kaskade"><img src="./Alan Walker_ Nghe tải album Alan Walker_files/1453716728047.jpg" data-src="https://avatar-nct.nixcdn.com/singer/avatar/2016/01/25/4/1/1/7/1453716728047.jpg" onerror="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/avatar_default.jpg&#39;, &#39;fail&#39;);" onload="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/avatar_default&#39;, &#39;&#39;);" title="Kaskade" alt="kaskade"></a><a href="https://www.nhaccuatui.com/tim-kiem?q=Kaskade&amp;b=singer" class="name_singer_main" title="Kaskade">Kaskade</a></li><li><a href="https://www.nhaccuatui.com/tim-kiem?q=ZHU&amp;b=singer" onclick="lt([&#39;artist-detail&#39;,&#39;list-artist&#39;,&#39;click&#39;,&#39;artist&#39;,&#39;zhu&#39;,&#39;&#39;,&#39;right-block&#39;]);" class="img" title="ZHU"><img src="./Alan Walker_ Nghe tải album Alan Walker_files/1487836122189.jpg" data-src="https://avatar-nct.nixcdn.com/singer/avatar/2017/02/23/5/c/a/2/1487836122189.jpg" onerror="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/avatar_default.jpg&#39;, &#39;fail&#39;);" onload="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/avatar_default&#39;, &#39;&#39;);" title="ZHU" alt="zhu"></a><a href="https://www.nhaccuatui.com/tim-kiem?q=ZHU&amp;b=singer" class="name_singer_main" title="ZHU">ZHU</a></li><li><a href="https://www.nhaccuatui.com/nghe-si-above-beyond.html" onclick="lt([&#39;artist-detail&#39;,&#39;list-artist&#39;,&#39;click&#39;,&#39;artist&#39;,&#39;above &amp; beyond&#39;,&#39;&#39;,&#39;right-block&#39;]);" class="img" title="Above &amp; Beyond"><img src="./Alan Walker_ Nghe tải album Alan Walker_files/1455849640266.jpg" data-src="https://avatar-nct.nixcdn.com/singer/avatar/2016/02/19/c/2/b/0/1455849640266.jpg" onerror="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/avatar_default.jpg&#39;, &#39;fail&#39;);" onload="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/avatar_default&#39;, &#39;&#39;);" title="Above &amp; Beyond" alt="above &amp; beyond"></a><a href="https://www.nhaccuatui.com/nghe-si-above-beyond.html" class="name_singer_main" title="Above &amp; Beyond">Above &amp; Beyond</a></li><li><a href="https://www.nhaccuatui.com/tim-kiem?q=Dash+Berlin&amp;b=singer" onclick="lt([&#39;artist-detail&#39;,&#39;list-artist&#39;,&#39;click&#39;,&#39;artist&#39;,&#39;dash berlin&#39;,&#39;&#39;,&#39;right-block&#39;]);" class="img" title="Dash Berlin"><img src="./Alan Walker_ Nghe tải album Alan Walker_files/1482285471604.jpg" data-src="https://avatar-nct.nixcdn.com/singer/avatar/2016/12/21/5/3/c/0/1482285471604.jpg" onerror="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/avatar_default.jpg&#39;, &#39;fail&#39;);" onload="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/avatar_default&#39;, &#39;&#39;);" title="Dash Berlin" alt="dash berlin"></a><a href="https://www.nhaccuatui.com/tim-kiem?q=Dash+Berlin&amp;b=singer" class="name_singer_main" title="Dash Berlin">Dash Berlin</a></li><li><a href="https://www.nhaccuatui.com/nghe-si-iselin-solheim.html" onclick="lt([&#39;artist-detail&#39;,&#39;list-artist&#39;,&#39;click&#39;,&#39;artist&#39;,&#39;iselin solheim&#39;,&#39;&#39;,&#39;right-block&#39;]);" class="img" title="Iselin Solheim"><img src="./Alan Walker_ Nghe tải album Alan Walker_files/1458034797247.jpg" data-src="https://avatar-nct.nixcdn.com/singer/avatar/2016/03/15/8/d/6/7/1458034797247.jpg" onerror="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/avatar_default.jpg&#39;, &#39;fail&#39;);" onload="common.handleErrorImage(this, &#39;https://stc-id.nixcdn.com/v11/images/avatar_default&#39;, &#39;&#39;);" title="Iselin Solheim" alt="iselin solheim"></a><a href="https://www.nhaccuatui.com/nghe-si-iselin-solheim.html" class="name_singer_main" title="Iselin Solheim">Iselin Solheim</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--End box content-->
+
+        <!--A Begin box footer-->
+        <div class="footer">
+            <div class="wrap">
+                <div class="content-wrap">
+                    <h6>@2018 M.S.C Channel. All Rights Reserved | Design by BinhNguyen</h6>
+                    <div class="clr"></div>
+                </div>
+            </div>
+        </div>
+        <!--End box footer-->
+
+    </body>
+</html>

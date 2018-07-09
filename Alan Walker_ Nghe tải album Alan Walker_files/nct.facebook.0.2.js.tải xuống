@@ -1,0 +1,34 @@
+var NCTFacebook = {
+    init: function () {
+//        try {
+//            window.fbAsyncInit = function () {
+//                FB.init({
+//                    appId: '414296278689656',
+//                    xfbml: true,
+//                    version: 'v2.10'
+//                });
+//                FB.AppEvents.logPageView();
+//            };
+//
+//            (function (d, s, id) {
+//                var js, fjs = d.getElementsByTagName(s)[0];
+//                if (d.getElementById(id)) {
+//                    return;
+//                }
+//                js = d.createElement(s);
+//                js.id = id;
+//                js.src = NCTInfo.STATIC_URL + "js/core/fb_sdk.js";
+//                fjs.parentNode.insertBefore(js, fjs);
+//            }(document, 'script', 'facebook-jssdk'));
+//        } catch (e) {
+//            console.log(e);
+//        }
+    },
+    push: function (eventName) {
+        try {
+            FB.AppEvents.logEvent(eventName);
+        } catch (e) {
+            console.log(e);
+        }
+    }
+};

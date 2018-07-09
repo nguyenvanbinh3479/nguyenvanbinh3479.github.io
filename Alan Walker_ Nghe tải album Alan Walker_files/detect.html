@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0034)https://smartpx.io/sdk/detect.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Smartpx</title>
+</head>
+
+<body>
+	<script>
+		var createCookie = function(name, value, days) {
+			var expires = "";
+			if (days) {
+				var date = new Date();
+				date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+				expires = "; expires=" + date.toUTCString();
+			}
+			document.cookie = name + "=" + value + expires + "; path=/";
+		};
+		window.onload = function() {
+			var ifrm = document.createElement("iframe");
+			var bibi = window.location.protocol + '//bibibook.vn/detect/smartpx';
+			ifrm.setAttribute("style", "width:1px;height:1px;border:none;display:none");
+			ifrm.setAttribute("src", bibi);
+			document.body.appendChild(ifrm);
+
+			window.addEventListener('message', function (event) {
+				if (event.origin.indexOf('bibibook.vn') < 0) {
+					return;
+				}
+				if (event.data && event.data != "") {
+					console.log(event.data);
+					createCookie('smartpx_phone', event.data, 365);
+				} else {
+					console.log('not found');
+				}
+			}, false);
+		}
+
+	</script>
+
+
+
+
+<iframe style="width:1px;height:1px;border:none;display:none" src="./smartpx.html"></iframe></body></html>
