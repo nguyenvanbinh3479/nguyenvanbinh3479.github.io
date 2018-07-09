@@ -3974,6 +3974,9 @@ ul.search_returns_list li.list_song.search .search_lyric{margin-bottom: 23px;wid
     audio {
         width: 626px;
     }
+    iframe{
+        width: 626px;
+    }
     .box-content .box_playing .playing_video{width:998px; }
     .box_playing .info_name_songmv .topbreadCrumb{ width:668px; }
     .box_playing .info_name_songmv .name_title{ width:518px;}
@@ -4041,7 +4044,7 @@ ul.search_returns_list li.list_song.search .search_lyric{margin-bottom: 23px;wid
     .list-singer-top-week .singer-top-week-content ul.item-top li ul{ width:183px;}
     .list-singer-top-week .singer-top-week-content ul.item-top li ul li{float:left; width:183px;}
     .list-singer-top-week .singer-top-week-content ul.item-top li ul li h3{ width:183px;}
-    .list-singer-top-week .singer-top-week-content ul.item-top li ul li h3 a{width:169px;}
+    .list-singer-top-week .singer-top-week-content ul.item-top li ul li h3 a{width:169px;} 
     .box-content .singer_profile{width:668px;}
 
     .singer-top-cover{height:314px;}
